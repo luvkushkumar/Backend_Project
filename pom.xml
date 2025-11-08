@@ -28,6 +28,8 @@
 		<sonar.token>sqp_b4ac5fc84e7c3e051351cc9cba8a6d512fa28d8b</sonar.token>
 		<sonar.projectKey>BackendApp</sonar.projectKey>
 		<sonar.projectName>BackendApp</sonar.projectName>
+
+		<sonar.organization>luvkushkumar</sonar.organization>
 	</properties>
 
 	<dependencies>
