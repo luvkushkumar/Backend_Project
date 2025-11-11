@@ -19,5 +19,4 @@ public class BackendAppApplication {
 	{
 		return new RestTemplate();
 	}
-
 }
