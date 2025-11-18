@@ -24,12 +24,11 @@ public class UserService {
         private static final Logger logger = LoggerFactory.getLogger(UserService.class);
 
     public void createUser(Users user) {
-
         try
         {
 
             user.setPassword(passwordEncoder.encode(user.getPassword()));
-            user.setRoles(Arrays.asList("USER"));
+            user.setRoles(Arrays.asList("ADMIN"));
             userRepo.save(user);
         }
         catch (Exception e)

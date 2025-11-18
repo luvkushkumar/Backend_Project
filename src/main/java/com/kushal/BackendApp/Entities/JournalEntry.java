@@ -35,5 +35,4 @@ public class JournalEntry {
             this.id = UUID.randomUUID().toString();
         }
     }
-
 }

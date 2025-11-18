@@ -1,5 +1,6 @@
 package com.kushal.BackendApp.controllers;
 
+import com.kushal.BackendApp.AppCache.AppCache;
 import com.kushal.BackendApp.Entities.Users;
 import com.kushal.BackendApp.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +17,9 @@ public class AdminController {
     @Autowired
     private UserService userService;
 
+    @Autowired
+    private AppCache appCache;
+
     @GetMapping("/all-users")
     public ResponseEntity<List<Users>> getAllUsers()
     {
@@ -31,6 +35,14 @@ public class AdminController {
     public void saveAdmin(@RequestBody Users users)
     {
         userService.saveAdmin(users);
+    }
+
+
+
+    @GetMapping("/clear-cache")
+    public void init()
+    {
+        appCache.init();
     }
 
 }
