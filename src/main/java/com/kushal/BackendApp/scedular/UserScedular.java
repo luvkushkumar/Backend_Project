@@ -44,6 +44,7 @@ public class UserScedular {
 //          emailService.sendEmail(user.getEmail(),"Sentiment data for last 7 days",sentiment);
 
 //        List<Users> users = userRepo.getUserForSA();
+
         for(Users user : users)
         {
             List<JournalEntry> entries = user.getJournalEntries();

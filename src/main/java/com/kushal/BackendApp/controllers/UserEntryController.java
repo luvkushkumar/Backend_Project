@@ -58,7 +58,6 @@ public class UserEntryController {
         {
             greetings =  "Weather feels like "+weatherResponse.getCurrent().getFeelslike();
         }
-
         return new ResponseEntity<>("Hi "+userName+" "+greetings,HttpStatus.OK);
     }
 }

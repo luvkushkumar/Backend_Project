@@ -30,7 +30,7 @@ public class AppCache {
         List<ConfigContent>  all = configRepo.findAll();
         for(ConfigContent c : all)
         {
-            appCache.put(c.getKey(),c.getValue());
+            appCache.put(c.getConfig_key(),c.getValue());
         }
     }
 }
